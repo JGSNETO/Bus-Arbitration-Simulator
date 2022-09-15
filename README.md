@@ -10,10 +10,10 @@
 - First of all, it is important to understand some aspects related with CAN protocol.
 - Controller Area Network(CAN) is a multi-master, message broadcast system that specifies a maximum signaling rate of 1 megabit per second(bps), a protocol that, due to its cost, performance, and upgradeability provides tremendous flexibility in system design. Because CAN is a broadcast protocol, all nodes can hear the transmission, been not possible to send a message to a specific node. But each node may react only to interesting messages. 
 - CAN bus protocol was developed by BOSCH and was officially released in 1986 at the Society of Automotive Engineers (SAE) conference in Detroit, Michigan. The first CAN controller chips were introduced by Intel in 1987, and shortly thereafter by Philips. 
-- If you want to know more about the CAN protocol, you can read my article: [LINK LINKEDIN].
+- If you want to know more about the CAN protocol, you can read my article: [CAN protocol](https://www.linkedin.com/pulse/can-protocol-jos%C3%A9-gomes/).
 
 #### CAN Frame
-[CAN FRAME IMAGE]
+![Logo do Markdown](img/CAN-FRAME.png)
 - All CAN messages sent through the bus, have the same structure, called CAN Frame:
 - **SOF:** The single dominant start of frame (SOF) bit marks the start of a message, and is used to synchronize the nodes on a bus after being idle.
 - **11-bit Identifier:** The Standard CAN 11-bit identifier establishes the priority of the message. The lower the binary value, the higher its priority. 
@@ -28,7 +28,7 @@
 - **IFS:** This 7-bit interframe space (IFS) contains the time required by the controller to move a correctly received frame to its proper position in a message buffer area. 
 
 ### Bus arbitration
-[BUS ARBITRATION PIC]
+![Bus arbitration](img/BusArbitration.png)
 - The CAN standard defines four different message types. The messages uses a clever scheme of bitwise arbitration to control access to the bus, and each message is tagged with a priority. The maximum length utility is 94 bits and they are contents-addressed.
 - Arbitration is a fundamental characteristic of the can bus. As a multi-master-slave protocol, more than one node can try to access the bus. To deal with that the protocol uses a non-destructive, bit-wise arbitration. It is non-destructive because the node that wins arbitration just continues on with the message, without the message being destroyed. The allocation of priority is a feature of CAN that makes it attractive for use within a real-time control environment.
 - The transmitting node constantly monitors each bit of its own transmission. The lower the message identifiers number the higher its priority, with bit zero as dominant and bit one as recessive. A dominant bit overwrites a recessive bit on the CAN bus. 
