@@ -1,0 +1,238 @@
+$comment
+	File created using the following command:
+		vcd file busSimulator.msim.vcd -direction
+$end
+$date
+	Fri Sep 16 20:46:28 2022
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module busSimulator_vlg_vec_tst $end
+$var reg 13 ! node_A [12:0] $end
+$var reg 13 " node_B [12:0] $end
+$var reg 13 # node_C [12:0] $end
+$var wire 1 $ OUTPUT [12] $end
+$var wire 1 % OUTPUT [11] $end
+$var wire 1 & OUTPUT [10] $end
+$var wire 1 ' OUTPUT [9] $end
+$var wire 1 ( OUTPUT [8] $end
+$var wire 1 ) OUTPUT [7] $end
+$var wire 1 * OUTPUT [6] $end
+$var wire 1 + OUTPUT [5] $end
+$var wire 1 , OUTPUT [4] $end
+$var wire 1 - OUTPUT [3] $end
+$var wire 1 . OUTPUT [2] $end
+$var wire 1 / OUTPUT [1] $end
+$var wire 1 0 OUTPUT [0] $end
+$var wire 1 1 sampler $end
+$scope module i1 $end
+$var wire 1 2 gnd $end
+$var wire 1 3 vcc $end
+$var wire 1 4 unknown $end
+$var tri1 1 5 devclrn $end
+$var tri1 1 6 devpor $end
+$var tri1 1 7 devoe $end
+$var wire 1 8 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 9 node_C[0]~input_o $end
+$var wire 1 : node_B[0]~input_o $end
+$var wire 1 ; node_A[0]~input_o $end
+$var wire 1 < OUTPUT~0_combout $end
+$var wire 1 = node_A[1]~input_o $end
+$var wire 1 > node_B[1]~input_o $end
+$var wire 1 ? node_C[1]~input_o $end
+$var wire 1 @ OUTPUT~1_combout $end
+$var wire 1 A node_C[2]~input_o $end
+$var wire 1 B node_A[2]~input_o $end
+$var wire 1 C node_B[2]~input_o $end
+$var wire 1 D OUTPUT~2_combout $end
+$var wire 1 E node_B[3]~input_o $end
+$var wire 1 F node_C[3]~input_o $end
+$var wire 1 G node_A[3]~input_o $end
+$var wire 1 H OUTPUT~3_combout $end
+$var wire 1 I node_C[4]~input_o $end
+$var wire 1 J node_B[4]~input_o $end
+$var wire 1 K node_A[4]~input_o $end
+$var wire 1 L OUTPUT~4_combout $end
+$var wire 1 M node_B[5]~input_o $end
+$var wire 1 N node_C[5]~input_o $end
+$var wire 1 O node_A[5]~input_o $end
+$var wire 1 P OUTPUT~5_combout $end
+$var wire 1 Q node_B[6]~input_o $end
+$var wire 1 R node_C[6]~input_o $end
+$var wire 1 S node_A[6]~input_o $end
+$var wire 1 T OUTPUT~6_combout $end
+$var wire 1 U node_C[7]~input_o $end
+$var wire 1 V node_B[7]~input_o $end
+$var wire 1 W node_A[7]~input_o $end
+$var wire 1 X OUTPUT~7_combout $end
+$var wire 1 Y node_A[8]~input_o $end
+$var wire 1 Z node_C[8]~input_o $end
+$var wire 1 [ node_B[8]~input_o $end
+$var wire 1 \ OUTPUT~8_combout $end
+$var wire 1 ] node_A[9]~input_o $end
+$var wire 1 ^ node_C[9]~input_o $end
+$var wire 1 _ node_B[9]~input_o $end
+$var wire 1 ` OUTPUT~9_combout $end
+$var wire 1 a node_A[10]~input_o $end
+$var wire 1 b node_B[10]~input_o $end
+$var wire 1 c node_C[10]~input_o $end
+$var wire 1 d OUTPUT~10_combout $end
+$var wire 1 e node_A[11]~input_o $end
+$var wire 1 f node_C[11]~input_o $end
+$var wire 1 g node_B[11]~input_o $end
+$var wire 1 h OUTPUT~11_combout $end
+$var wire 1 i node_C[12]~input_o $end
+$var wire 1 j node_A[12]~input_o $end
+$var wire 1 k node_B[12]~input_o $end
+$var wire 1 l OUTPUT~12_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b0 "
+b0 #
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+x1
+02
+13
+x4
+15
+16
+17
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+$end
+#10000
+b100000000000 !
+b110000000000 !
+b110010000000 !
+b110010100000 !
+b110010100010 !
+b10000000000 "
+b10100000000 "
+b10100100000 "
+b10100100100 "
+b100000000000 #
+b110000000000 #
+b111000000000 #
+b111100000000 #
+b111100001000 #
+1F
+1Z
+1^
+1c
+1f
+1C
+1M
+1[
+1b
+1=
+1O
+1W
+1a
+1e
+01
+1d
+1&
+#990000
+b10010100010 !
+b10100010 !
+b100010 !
+b10 !
+b0 !
+b100100100 "
+b100100 "
+b100 "
+b0 "
+b11100001000 #
+b1100001000 #
+b100001000 #
+b1000 #
+b0 #
+0F
+0Z
+0^
+0c
+0f
+0C
+0M
+0[
+0b
+0=
+0O
+0W
+0a
+0e
+11
+0d
+0&
+#1000000

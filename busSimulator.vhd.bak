@@ -1,0 +1,24 @@
+/*
+Title: Bus arbitration simulator
+Author: José Gomes
+
+Description: This project is to simulate the bus arbitration in a CAN communication. 
+*/
+
+/*Header*/
+library IEEE;
+use IEEE.STD_LOGIC_1164.all
+
+/*Declaring I/O*/
+entity busArbitration is
+port(
+node_a, node_b, node_c: in STD_LOGIC_VECTOR(O downto 10);
+output: out STD_LOGIC_VECTOR(0 downto 10)
+);
+
+architecture behaviour of busArbitration is
+begin
+
+output <= node_a and node_b and node_c;
+
+end;
